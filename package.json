@@ -1,0 +1,27 @@
+{
+  "name": "bac-ky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blunt/bac-ky.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blunt/bac-ky/issues"
+  },
+  "homepage": "https://github.com/blunt/bac-ky#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-postcss": "^6.2.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2"
+  }
+}
