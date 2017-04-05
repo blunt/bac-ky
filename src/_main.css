@@ -1,1 +1,17 @@
 @import 'vendors/_normalize.css';
+@import 'vendors/_icomoon.css';
+
+@import 'config/_breakpoints.css';
+@import 'config/_grid.css';
+@import 'config/_typography.css';
+@import 'config/_colors.css';
+@import 'config/_mixins.css';
+
+@import 'partials/_nav.css';
+@import 'partials/_section.css';
+@import 'partials/_about.css';
+@import 'partials/_menu.css';
+@import 'partials/_social.css';
+@import 'partials/_location.css';
+@import 'partials/_image-column.css';
+@import 'partials/_footer.css';

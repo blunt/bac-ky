@@ -1,0 +1,33 @@
+footer {
+    padding: 1.5em 0;
+    text-align: left;
+    & .site-logo {
+        font-size: 150%;
+        margin: 20px auto 0;
+    }
+    & span {
+        font-size: 80%;
+        margin-top: .85em;
+        display: block;
+        margin-bottom: 2em;
+    }
+    @apply --clearfix;
+    @media (min-width: 500px) {
+        text-align: right;
+        & .site-logo {
+            margin-left: .75em;
+            float:right;
+        }
+        & span {
+            margin-bottom: 0;
+            display: inline-block;
+        }
+    }
+}
+
+.address {
+    margin-bottom: 2em;
+    @media (--b-laptop) {
+        margin-bottom: 0;
+    }
+}

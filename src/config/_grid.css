@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row {
+    create-row: 1320px;
+}
+
+.column {
+    create-column: 40px;
+}
+
+.column.no-gutter {
+    padding: 0;
+}
+
+@media (min-width: 0) {
+    .small {
+        create-grid: 6;
+    }
+    .small-offset {
+        create-offset: 6;
+    }
+}
+
+@media (--b-tablet) {
+    .medium-half {
+        create-grid: 2;
+    }
+    .medium {
+        create-grid: 9;
+    }
+    .medium-offset {
+        create-offset: 9;
+    }
+}
+
+@media (--b-laptop) {
+    .large {
+        create-grid: 18;
+    }
+    .offset {
+        create-offset: 18;
+    }
+}

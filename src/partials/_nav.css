@@ -1,0 +1,35 @@
+header {
+    padding: 1.25em 0;
+    position: relative;
+    z-index: 11;
+}
+.site-logo {
+    float: left;
+    width: 4em;
+    & svg {
+        width: 100%;
+        height: auto;
+    }
+}
+nav {
+    float: right;
+    padding: .8em 0;
+    display: block;
+    & a {
+        font-size: 70%;
+        letter-spacing: .05em;
+        display: inline-block;
+        line-height: .5;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:not(:first-child) {
+            margin-left: 1em;
+        }
+        &:hover {
+            background: var(--c-yellow);
+        }
+    }
+    @media (--b-tablet) {
+        padding: 1.025em 0;
+    }
+}

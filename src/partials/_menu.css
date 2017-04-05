@@ -1,0 +1,102 @@
+.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    & .section-heading {
+        position: relative;
+        margin-bottom: .5em;
+    }
+    @media (--b-tablet) {
+        & .section-heading {
+            position: absolute;
+        }
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.menu-heading {
+    position: static;
+}
+
+.menu-section-heading {
+    color: var(--c-red);
+    font-family: var(--t-menu-font);
+    letter-spacing: .1em;
+    margin-bottom: 40px;
+    margin-top: 0;
+    & span {
+        background: #fff;
+        padding: 0 .8em;
+        margin-left: -.8em;
+        position: relative;
+    }
+    &:before {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        margin-top: .6em;
+        height: 1px;
+        background: var(--c-red);
+        content: "";
+    }
+    @media (--b-laptop) {
+        margin-top: 2em;
+        margin-bottom: 80px;
+    }
+}
+
+.menu-inner-section {
+    &.last {
+        margin-top: 2em;
+    }
+}
+
+.section {
+    margin-bottom: 2em;
+    @media (--b-tablet) {
+        margin-bottom: 0;
+    }
+}
+.menu-items {
+    padding: 0;
+    list-style: none;
+    margin: .5em 0;
+    @media (--b-tablet) {
+        font-size: 1em;
+    }
+}
+.menu-item {
+    & strong {
+        font-size: 109%;
+        line-height: 1.25;
+        margin-bottom: .3em;
+        display: block;
+        float: left;
+        max-width: 80%;
+    }
+    & span {
+        margin-top: .3em;
+        font-size: 72%;
+        color: var(--c-red);
+        float: right;
+        font-family: var(--t-menu-font);
+    }
+    & p {
+        font-size: 82%;
+        clear:both;
+        line-height: 1.25;
+        min-height: inherit;
+        @media (--b-tablet) {
+            min-height: 66px;
+        }
+    }
+    &.no-min {
+        & p {
+            min-height: inherit;
+        }
+    }
+    &:not(:first-child) {
+        margin-top: 1em;
+    }
+    @apply --clearfix;
+}

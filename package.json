@@ -19,9 +19,13 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
-    "gulp-postcss": "^6.2.0"
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "postcss-easy-import": "^1.0.1",
+    "postcss-simple-grid": "^0.7.1",
+    "scrollmagic": "^2.0.5"
   },
   "dependencies": {
-    "gulp-rename": "^1.2.2"
+    "aos": "^2.1.1"
   }
 }

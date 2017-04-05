@@ -1,0 +1,18 @@
+.social-icon {
+    width: 45px;
+    height: 45px;
+    padding: .45em 0 0;
+    text-align: center;
+    background: var(--c-yellow);
+    display: inline-block;
+    margin-right: .2em;
+    margin-bottom: .2em;
+    margin-top: 1em;
+    font-size: 125%;
+    &:last-child {
+        margin-top: .2em;
+    }
+    @media (--b-tablet) {
+        padding: .35em 0 0;
+    }
+}
